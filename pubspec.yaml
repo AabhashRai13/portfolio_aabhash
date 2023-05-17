@@ -37,16 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_bloc: ^8.1.2
   github: ^9.2.0
-
-  # web related
   flutter_html: any
   url_strategy: ^0.2.0
   universal_html: ^2.0.4
-
-  # http
   http: ^0.13.1
-
-  # utils
   mailto: ^2.0.0
   flip_card: ^0.6.0
   url_launcher: ^6.1.2
@@ -54,12 +48,10 @@ dependencies:
   animated_text_kit: ^4.2.1
   font_awesome_flutter: ^10.1.0
   get_it: ^7.3.0
-  # state management
-  provider: ^6.0.1
-
-  # cache
   shared_preferences: ^2.0.6
   google_fonts: ^4.0.4
+  youtube_player_iframe: ^4.0.4
+  firebase_core: ^2.13.0
 
 
 dev_dependencies:

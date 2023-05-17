@@ -4,11 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:aabhash_portfolio_website/presentation//configs/core_theme.dart'
     as theme;
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_keys.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initAppModule();
   setPathUrlStrategy();
+  Firebase.initializeApp(
+      options: FirebaseOptions(
+    apiKey: firebaseConfigKeys["apiKey"]!,
+    projectId: firebaseConfigKeys["projectId"]!,
+    messagingSenderId: firebaseConfigKeys["messagingSenderId"]!,
+    appId: firebaseConfigKeys["appId"]!,
+  ));
   runApp(const App());
 }
 

@@ -10,10 +10,11 @@ class Player extends StatelessWidget {
       alignment: Alignment(playerX, 1),
       child: Container(
         decoration: const BoxDecoration(
-            color: Colors.yellow,
+            color: Colors.transparent,
             borderRadius: BorderRadius.all(Radius.circular(20))),
         height: 50,
         width: 50,
+        child: Image.asset("assets/spongebob.png"),
       ),
     );
   }

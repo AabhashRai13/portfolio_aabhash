@@ -14,10 +14,7 @@ class MobileDrawer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Center(
-                child: NavBarLogo(),
-              ),
-              const Divider(),
+         
               ...NavBarUtils.names.asMap().entries.map(
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),

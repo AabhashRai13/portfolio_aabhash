@@ -29,9 +29,9 @@ class ScrollCubit extends Cubit<ScrollState> {
     double offset = index == 1
         ? 290
         : index == 2
-            ? 360
+            ? 250
             : index == 3
-                ? 300
+                ? 220
                 : 310;
     scrollController.animateTo(
       AppDimensions.normalize(

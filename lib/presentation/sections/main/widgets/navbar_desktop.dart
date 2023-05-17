@@ -1,7 +1,7 @@
 part of '../main_section.dart';
 
-class _NavbarDesktop extends StatelessWidget {
-  const _NavbarDesktop({Key? key}) : super(key: key);
+class NavbarDesktop extends StatelessWidget {
+  const NavbarDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,6 @@ class _NavbarDesktop extends StatelessWidget {
       padding: Space.all(),
       child: Row(
         children: [
-          const NavBarLogo(),
           Space.xm!,
           ...NavBarUtils.names.asMap().entries.map(
                 (e) => NavBarActionButton(
@@ -26,7 +25,7 @@ class _NavbarDesktop extends StatelessWidget {
               onPressed: () {
                 html.window.open(
                   StaticUtils.resume,
-                  "pdf",
+                  "docx",
                 );
               },
               child: Padding(
@@ -45,8 +44,8 @@ class _NavbarDesktop extends StatelessWidget {
   }
 }
 
-class _NavBarTablet extends StatelessWidget {
-  _NavBarTablet({Key? key}) : super(key: key);
+class NavBarTablet extends StatelessWidget {
+  NavBarTablet({Key? key}) : super(key: key);
   final DrawerCubit _drawerCubit = sl<DrawerCubit>();
   @override
   Widget build(BuildContext context) {
@@ -68,8 +67,6 @@ class _NavBarTablet extends StatelessWidget {
                   Icons.menu,
                 ),
               ),
-              Space.xm!,
-              const NavBarLogo(),
               Space.x1!,
             ],
           );

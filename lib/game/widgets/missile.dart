@@ -15,9 +15,19 @@ class Missile extends StatelessWidget {
     return Container(
       alignment: Alignment(missileX, 1),
       child: Container(
-        width: 2,
+        width: 1,
         height: missileHeight,
-        color: Colors.grey,
+        decoration: BoxDecoration(
+          color: Colors.pink[100],
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.2),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: const Offset(0, 3), // changes position of shadow
+            ),
+          ],
+        ),
       ),
     );
   }

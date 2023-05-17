@@ -20,9 +20,8 @@ class ServiceDesktopState extends State<ServiceDesktop> {
       child: Column(
         children: [
           const CustomSectionHeading(
-            text: '\nWhat I can do?',
+            text: '\nMy Expertise',
           ),
-       
           Space.y!,
           Wrap(
             spacing: width * 0.05,
@@ -41,7 +40,10 @@ class ServiceDesktopState extends State<ServiceDesktop> {
                   ),
                 )
                 .toList(),
-          )
+          ),
+          SizedBox(
+            height: height < 821 ? height * 0.09 : height * 0.07,
+          ),
         ],
       ),
     );

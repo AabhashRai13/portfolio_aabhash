@@ -1,5 +1,6 @@
 import 'package:aabhash_portfolio_website/presentation/sections/about/about.dart';
 import 'package:aabhash_portfolio_website/presentation/sections/contact/contact.dart';
+import 'package:aabhash_portfolio_website/presentation/sections/created_by/created_by.dart';
 import 'package:aabhash_portfolio_website/presentation/sections/home/home.dart';
 import 'package:aabhash_portfolio_website/presentation/sections/portfolio/portfolio.dart';
 import 'package:aabhash_portfolio_website/presentation/sections/services/services.dart';
@@ -22,7 +23,7 @@ class StaticUtils {
   static const String coaching = 'assets/icons/teach.png';
 
   static const String resume =
-      'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+      'https://docs.google.com/document/d/1PuQstrLJ8hxkb_-1KkFMommzbJ0ts08h/edit?usp=share_link&ouid=103813353901071983306&rtpof=true&sd=true';
 
   static const String gitHub = 'https://github.com/AabhashRai13';
   static const String upWork = 'https://www.upwork.com/freelancers/aabhashrai';
@@ -35,5 +36,6 @@ class BodyUtils {
     Services(),
     Portfolio(),
     Contact(),
+    CreatedByScreen()
   ];
 }
